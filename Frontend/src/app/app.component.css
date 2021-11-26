@@ -1,0 +1,60 @@
+/* .navbar{
+    background-color: rgba(27, 27, 29, 0.849);
+  }
+  .navbar-dark .navbar-nav .nav-item .nav-link{
+   
+    color:white;
+    font-size: 20px;
+    text-align-last: right;
+    
+  }
+   
+  .navbar-dark .navbar-nav .nav-item .nav-link:hover{
+   
+    color:orangered;
+    text-align-last: right;
+  }
+   
+  .navbar-brand{
+    color: white;
+    font-size:25px;
+  }
+   
+  .navbar-brand:hover{
+    color:red;
+  }
+   
+   
+   
+  i
+  {
+  border-radius: 60px;
+   
+  }
+   
+   .btn-outline-light{
+    border-radius: 60px;
+  } 
+  .btn{
+    padding-left: 10px;
+    margin: 10px;
+}*/
+
+/* :host {
+    display: block;
+    background-image: url('../assets/img/BG.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.navbar{
+  background-color: rgba(27, 27, 29, 0.849);
+  /* background-color: #002366; */
+}
+.navbar-brand{
+  font-size: 25px;
+  padding: 5px;
+}
+.btn{
+  padding-left: 10px;
+  margin: 10px;
+}

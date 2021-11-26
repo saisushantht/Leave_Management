@@ -1,0 +1,96 @@
+
+
+
+
+<div class="container-fluid text-center py-5" >  
+  
+  
+    <div class="row content">
+      <div class="col-sm-4 ">
+       
+      </div>
+      <div class="col-sm-4 text-left bg-white p-5 " style="margin-top: auto; border-radius: 35px;" > 
+        <div class="alert alert-danger" role="alert" *ngIf="check">
+          {{errors.error}}
+        </div>
+        <h1>Apply for a leave</h1>
+            <form >
+                <br>
+                <!-- <input [(ngModel)]="leave.username" type="text" class="form-control border border-success" id="username" name="username" placeholder="Username">
+                <br> -->
+                <br>
+               
+                <!-- <select class="form-select" aria-label="Default select example" name="type" *ngFor="let d of details" [(ngModel)]="type" required aria-placeholder="Type of Leave">
+                  <option selected>Type Of Leave</option>
+                  <option value="sick">Sick({{d.sick}})</option>
+                  <option value="casual">Casual({{d.casual}})</option>
+                  <option value="privilege">Privilege({{d.privilege}})</option>
+                </select>
+                <label for="floatingInput">Gold *</label> -->
+
+
+                <div class="form-floating mb-4">
+                  <select class="form-control"
+                  [(ngModel)]="type" required
+                  name="loan"
+                  *ngFor="let d of details">
+                 
+                  <option value="sick">Sick({{d.sick}})</option>
+                  <option value="casual">Casual({{d.casual}})</option>
+                  <option value="privilege">Privilege({{d.privilege}})</option>
+                  </select>
+                  <label for="floatingInput"><strong>TYPE OF LEAVE</strong></label>
+                </div>
+
+                <br>
+                <input [(ngModel)]="leave.dt" type="date"  class="form-control border border-success"  value="date" min="2021-01-01" max="2021-12-31" id="date" name="dt" placeholder="Date">
+                <br>
+                <br>
+                <div class="form-floating mb-4">
+                  <select class="form-control"
+                  [(ngModel)]="noofdays" required
+                  name="loan">
+                 
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  </select>
+                  <label for="floatingInput"><strong>NO OF DAYS</strong></label>
+                </div>
+
+
+
+
+
+
+                <!-- <select class="form-select" aria-label="Default select example" name="noofdays" [(ngModel)]="noofdays" required>
+                  <option selected>No of Days</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                </select> -->
+                <br>
+                <input [(ngModel)]="leave.des" type="text"  class="form-control border border-success"id="reason" name="des" placeholder="Reason for leave">
+                <br>
+                <br>
+                
+                <!-- <input  type="text" class="form-control border border-success" id="id" name="id" placeholder="Id">
+                <br> -->
+                <br>
+                <a type="button" (click) = "saveLeave()" class="btn btn-lg btn-outline-dark">Apply for a leave</a>
+            </form>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet>
+      
+  </router-outlet>
+  
+  

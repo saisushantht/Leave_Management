@@ -1,0 +1,28 @@
+
+
+
+
+<div class="container-fluid text-center">
+
+    <div class="row content">
+      <div class="col-sm-4 ">
+       
+      </div>
+      <div class="col-sm-4 text-left bg-white p-5" *ngFor="let d of details"  style="margin-top: auto; border-radius: 35px;" > 
+        <h1>Welcome {{this.username}} </h1>
+        <br>
+        <h2>Number of leaves left: {{count}}</h2>
+        <br>
+        <a  class="btn btn-lg btn-outline-dark"   *ngIf="(count)>0" routerLink="addleave">Apply for a leave</a>
+        <br>
+        <br>
+        <a type="button" class="btn btn-lg btn-outline-dark" routerLink="getLeaves">Check your leaves</a>
+      </div>
+    </div>
+  </div>
+ 
+  <router-outlet>
+      
+  </router-outlet>
+  
+  

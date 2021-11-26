@@ -1,0 +1,41 @@
+
+
+
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-lg-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center py-3 ">Leaves Table</h2>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Reason</th>
+                                        <th>date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let l of leave">
+                                        <td>{{l.username}}</td>
+                                        <td>{{l.des}}</td>
+                                        <td>{{l.dt}}</td>
+                                        <td><button type="button" class="btnRegister" *ngIf="l.status==='approved'" >Approved</button>
+                                            <button type="button" class="btnRegisters" *ngIf="l.status==='rejected'">Rejected</button>
+                                            <button type="button" class="btnRegisters" *ngIf="l.status==='pending'">Pending</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
